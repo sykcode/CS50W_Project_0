@@ -1,0 +1,86 @@
+$left-padding: 40px;
+$standard-vertical-gap: 20px;
+$large-font-size: 20px;
+$medium-font-size: 16px;
+
+body {
+    display: flex; /* Enables Flexbox layout on the body */
+    margin: 0; /* Removes default margin set by the browser */
+    flex-direction: column; /* Aligns items vertically */
+    font-family: Arial, Helvetica, sans-serif;
+}
+#top-right-button { /* Google Search Button */
+    position: absolute;
+    top: $standard-vertical-gap;
+    right: 20px;
+    color: black; /* Sets text color to black */
+    text-decoration: none; /* Removes underline */
+    font-size: $medium-font-size; /* Sets font size (optional) */
+    font-weight: normal; /* Ensures text is regular weight */
+}
+h1 { /* Advanced Search Heading */
+    padding-left: $left-padding;
+    margin-top: $standard-vertical-gap;
+    font-weight:normal;
+    font-size: $large-font-size; 
+    color: red;
+}
+hr { /* Aesthetic Grey Line Separator */
+    border: none; /* Removes default styling */
+    border-top: 1px solid grey; /* Adds a custom line */
+    width: 100%; /* Ensures full width */
+}
+#form-container { /* Main Form Section */
+    display: flex; /* Enables Flexbox layout on form */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: flex-start; /* Aligns everything to the left */
+    gap: $standard-vertical-gap; /* Adds vertical spacing between rows */
+    width: 1010px; /* Matches the combined width of labels and input fields */
+}
+ul {
+    padding-left: $left-padding;
+}
+h2 {
+    font-weight: normal;
+    font-size: $large-font-size;
+    color: black;
+}
+.inline-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add some spacing between text and input field */
+}
+.label {
+    width: 200px; /* Fixed width for all labels (e.g., <h3>) */
+    text-align: left; /* Aligns text to the left */
+    padding-right: 10px; /* Adds spacing between label and input */
+}
+h3 {
+    font-weight: lighter;
+    font-size: $medium-font-size;
+    color: black;
+}
+.button-container {
+    width: 100%; /* Ensure the button spans the full width of the form container */
+    text-align: right; /* Aligns the button to the right */
+}
+.submit-button {
+    padding: 10px 20px;
+    font-size: $medium-font-size;
+    background-color: #AECBFA; /* Button background color */
+    border: 1px solid #dcdcdc; /* Border for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.submit-button:hover {
+    background-color: #d3e1f8; /* Darker grey on hover */
+}
+input[type="text"] {
+    width: 300px; 
+    height: 8px; 
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 40px;
+}

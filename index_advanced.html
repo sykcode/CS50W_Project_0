@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="index_advanced_variables.css">
+</head>
+
+<body>
+    <a id="top-right-button" href="index.html">
+        Google Search
+    </a>
+
+    <h1>Advanced Search</h1> 
+
+    <hr> <!-- Grey Line -->
+
+    <form id="form-container" action="https://www.google.com/search" method="GET">
+        <ul>    
+            <h2>Find pages with...</h2>
+            
+            <!-- All these words -->
+            <div class="inline-container">
+                <h3 class="label">all these words: </h3>
+                <input type="text" name="q"> <!-- Main query -->
+            </div>
+            
+            <!-- This exact word or phrase -->
+            <div class="inline-container">
+                <h3 class="label">this exact word or phrase: </h3>
+                <input type="text" name="as_epq"> <!-- Exact phrase -->
+            </div>
+            
+            <!-- Any of these words -->
+            <div class="inline-container">
+                <h3 class="label">any of these words: </h3>
+                <input type="text" name="as_oq"> <!-- Any of these words -->
+            </div>
+            
+            <!-- None of these words -->
+            <div class="inline-container">
+                <h3 class="label">none of these words: </h3>
+                <input type="text" name="as_eq"> <!-- Exclude words -->
+            </div>
+            
+            <!-- Numbers ranging from -->
+            <div class="inline-container">
+                <h3 class="label">numbers ranging from: </h3>
+                <input type="text" name="numrange_start"> <!-- Start of range -->
+                <h3>to</h3>
+                <input type="text" name="numrange_end"> <!-- End of range -->
+            </div>
+        </ul>
+        <!-- Advanced Search Button -->
+        <div class="button-container">
+            <button type="submit" class="submit-button">Advanced Search</button>
+        </div>
+    </form>
+</body>
+</html>

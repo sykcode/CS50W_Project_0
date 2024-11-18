@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="index_advanced_variables.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;  
+            display: flex; /* Enables Flexbox layout on the body */
+            margin: 0; /* Removes default margin set by the browser */
+            height: 100vh; /* Makes the body take up the full viewport height */
+            justify-content: center; /* Centers content vertically */
+            align-items: center; /* Centers content horizontally */
+        }
+
+        #top-left-links {
+            position: absolute; /* Absolute positioning; default at center */
+            top: 20px;
+            left: 20px;
+            font-size: 16px; 
+            font-weight: normal;
+        }
+        .link {
+            color: black;
+            text-decoration: none; /* Removes underline */ 
+            margin-right: 16px /* Horizontal spacing between links */
+        }
+        #top-right-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: black; /* Sets text color to black */
+            text-decoration: none; /* Removes underline */
+            font-size: 16px; /* Sets font size */
+            font-weight: normal; /* Ensures text is regular weight */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            text-align: center; /* Centers all form content (e.g., button) */
+        }
+        #google-images-logo {
+            padding-bottom: 8px; /* Padding below Google Images JPG */
+            z-index: -1;
+        }
+        input[type="text"] {
+            border-radius: 80px; /* Rounds corners of the input box */
+            width: 550px; 
+            height: 30px; 
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 40px;
+        }
+        input[type="submit"] {
+            border-radius: 8px; /* Rounds corners of the buttons */
+            padding: 8px 16px; /* Adds padding inside the button; vertical horizontal */
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div id="top-left-links">
+        <a class="link" href="https://about.google/">
+            About
+        </a>
+        <a class="link" href="https://store.google.com/">
+            Store
+        </a>
+    </div>
+
+    <a href="index.html" id="top-right-button">
+        Google Search
+    </a>
+
+    <form action="https://www.google.com/search" method="GET">
+        <img id="google-images-logo" src="GoogleImages.png" alt="google" width="300">
+        <div>
+            <input type="text" name="q">
+        </div>
+        <input type="hidden" name="tbm" value="isch"> <!-- Hidden field for Image search -->
+        <br>
+        <div>
+            <input type="submit" value="Image Search">
+        </div>
+    </form>
+
+</body>
+</html>
